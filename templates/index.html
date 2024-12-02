@@ -3,13 +3,17 @@
 {% block title %}Noah Staveley{% endblock %}
 
 {% block content %}
-{% for post in posts[:4] %} <!-- Restrict the loop to the first 4 projects -->
+{% for post in posts[:8] %} <!-- Restrict the loop to the first 8 projects -->
 <div class="post">
     <h2>
-        <a href="{{ url_for('project1') if post['title'] == 'Project 1' 
-               else url_for('project2') if post['title'] == 'Project 2' 
-               else url_for('project3') if post['title'] == 'Project 3' 
-               else url_for('project4') if post['title'] == 'Project 4' else '#' }}">
+        <a href="{{ url_for('maui2024') if post['title'] == 'Maui 2024' 
+               else url_for('guat2024') if post['title'] == 'Guatemala 2024' 
+               else url_for('turk2023') if post['title'] == 'Grand Turk 2024'
+               else url_for('italy2023') if post['title'] == 'Italy 2023' 
+               else url_for('cdmx2023') if post['title'] == 'Mexico City 2023'
+               else url_for('ireland2023') if post['title'] == 'Ireland 2023'
+               else url_for('iremalta2022') if post['title'] == 'Ireland and Malta 2022'
+               else url_for('tulum2020') if post['title'] == 'Tulum 2020' else '#' }}">
             {{ post['title'] }}
         </a>
     </h2>

@@ -14,21 +14,37 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/project1')
-def project1():
-    return render_template('project1.html')
+@app.route('/maui2024')
+def maui2024():
+    return render_template('maui2024.html')
 
-@app.route('/project2')
-def project2():
-    return render_template('project2.html')
+@app.route('/guatemala2024')
+def guat2024():
+    return render_template('guat2024.html')
 
-@app.route('/project3')
-def project3():
-    return render_template('project3.html')
+@app.route('/turk2023')
+def turk2023():
+    return render_template('turk2023.html')
 
-@app.route('/project4')
-def project4():
-    return render_template('project4.html')
+@app.route('/italy2023')
+def italy2023():
+    return render_template('italy2023.html')
+
+@app.route('/cdmx2023')
+def cdmx2023():
+    return render_template('cdmx2023.html')
+
+@app.route('/ireland2023')
+def ireland2023():
+    return render_template('ireland2023.html')
+
+@app.route('/irelandmalta2022')
+def iremalta2022():
+    return render_template('iremalta2022.html')
+
+@app.route('/tulum2020')
+def tulum2020():
+    return render_template('tulum2020.html')
 @app.route('/street-skating')
 def street_skating():
     return render_template('street_skating.html')
