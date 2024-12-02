@@ -1,10 +1,42 @@
 {% extends 'base.html' %}
-
 {% block title %}About - Noah Staveley{% endblock %}
-
 {% block content %}
-<div class="container">
-    <h1>About This Site</h1>
-    <p>add content here</p>
+<div class="about-container">
+    <h1>About Me</h1>
+   
+    <!-- Software Engineering Section -->
+    <div class="about-section">
+        <h2>Software Engineering</h2>
+        <p>As a software engineer, I focus on optimizing cloud performance and infrastructure efficiency. I work with open-source technologies and cloud environments to enhance system performance. My technical expertise spans:</p>
+        <ul>
+            <li>Cloud optimization: Improving workload performance in VM environments running Amazon Linux and BottleRocket operating systems, with expertise in x86-64 microarchitecture</li>
+            <li>Infrastructure and containerization: Proficient with Linux-based systems (Ubuntu, CentOS), virtualization using QEMU/KVM, and containerized environments (Docker, Kubernetes)</li>
+            <li>Full-stack development: Experience with multiple programming languages including Java, C, C++, Python, and Go, demonstrated through various projects including IoT health monitoring systems and web servers</li>
+            <li>Cloud technologies: Extensive experience with AWS, cloud computing, and vector databases, focusing on optimizing cloud environments for cost and efficiency</li>
+            <li>Systems programming: Developed complex systems including a primitive UNIX-like operating system (xk-OS) implementing file systems and inter-process communication</li>
+            <li>Networking: Built and implemented multi-threaded servers, network protocols, and SDN primitives using TCP/UDP sockets and OpenFlow protocol</li>
+        </ul>
+        <a href="{{ url_for('static', filename='docs/resume.pdf') }}" class="resume-link" target="_blank">Download Resume</a>
+    </div>
+    <!-- Home Projects Section -->
+    <div class="about-section">
+        <h2>Home Ownership</h2>
+        <p>As a homeowner, I enjoy taking on various improvement and maintenance projects. My experience includes:</p>
+        <ul>
+            <li>Various small projects: lighting upgrades, installation: garage door opener, ceiling fan, dryer vent, kitchen backsplash, kitchen and bath sinks</li>
+            <li>Regular maintenance and repairs: patching drywall, appliance repair (fridge, washer)</li>
+            <li>Outdoor maintenance and repairs: deck maintenance, landscaping, drainage solutions, foundation crack repair</li>
+        </ul>
+    </div>
+    <!-- Skateboarding Section -->
+    <div class="about-section">
+        <h2>Skateboarding</h2>
+        <p></p>
+        <ul>
+            <li><a href="{{ url_for('street_skating') }}" class="skate-link">Street Skating</a></li>
+            <li><a href="{{ url_for('park_skating') }}" class="skate-link">Park Skating</a></li>
+            <li><a href="{{ url_for('skate_camp') }}" class="skate-link">Skate Camp</a></li>
+        </ul>
+    </div>
 </div>
 {% endblock %}

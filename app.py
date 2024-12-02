@@ -29,6 +29,28 @@ def project3():
 @app.route('/project4')
 def project4():
     return render_template('project4.html')
+@app.route('/street-skating')
+def street_skating():
+    return render_template('street_skating.html')
+
+@app.route('/park-skating')
+def park_skating():
+    return render_template('park_skating.html')
+
+@app.route('/skate-camp')
+def skate_camp():
+    return render_template('skate_camp.html')
+@app.route('/skate-camp/2023')
+def skate_camp_2023():
+    return render_template('skate_camp_2023.html')
+
+@app.route('/skate-camp/2024')
+def skate_camp_2024():
+    return render_template('skate_camp_2024.html')
+
+@app.route('/skate-camp/2025')
+def skate_camp_2025():
+    return render_template('skate_camp_2025.html')
 def get_db_connection():
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Skate Camp - Noah Staveley{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Skate Camp</h1>
+    <div class="skate-years">
+        <!-- 2023 Section -->
+        <div class="camp-section">
+            <h2><a href="{{ url_for('skate_camp_2023') }}" class="camp-link">Skate Camp 2023</a></h2>
+            <p>Year 1</p>
+        </div>
+        
+        <!-- 2024 Section -->
+        <div class="camp-section">
+            <h2><a href="{{ url_for('skate_camp_2024') }}" class="camp-link">Skate Camp 2024</a></h2>
+            <p>Returned for rear 2!</p>
+        </div>
+        
+        <!-- 2025 Section -->
+        <div class="camp-section">
+            <h2><a href="{{ url_for('skate_camp_2025') }}" class="camp-link">Skate Camp 2025</a></h2>
+            <p>Returning with Natrice for year 3!</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
