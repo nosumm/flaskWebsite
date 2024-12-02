@@ -170,3 +170,49 @@ h1 {
         padding: 10px;
     }
 }
+
+.destination-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.destination-section h2 {
+    color: #5d4037;
+    border-bottom: 2px solid #a1887f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.destination-section h3 {
+    color: #795548;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.destination-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.destination-details li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.destination-details li:before {
+    content: "•";
+    color: #795548;
+    position: absolute;
+    left: 0;
+}
+
+.travel-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}

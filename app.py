@@ -51,6 +51,17 @@ def skate_camp_2024():
 @app.route('/skate-camp/2025')
 def skate_camp_2025():
     return render_template('skate_camp_2025.html')
+@app.route('/travel/been')
+def places_been():
+    return render_template('places_been.html')
+
+@app.route('/travel/going')
+def places_going():
+    return render_template('places_going.html')
+
+@app.route('/travel/favorites')
+def favorite_places():
+    return render_template('favorite_places.html')
 def get_db_connection():
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row

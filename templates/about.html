@@ -3,6 +3,36 @@
 {% block content %}
 <div class="about-container">
     <h1>About Me</h1>
+    <!-- Travel Section -->
+    <div class="about-section">
+        <h2>Travel</h2>
+        <p>Exploring new places and experiencing different cultures:</p>
+        <ul>
+            <li><a href="{{ url_for('places_been') }}" class="travel-link">Places I've Been</a> </li>
+            <li><a href="{{ url_for('places_going') }}" class="travel-link">Places I'm Going</a> </li>
+            <li><a href="{{ url_for('favorite_places') }}" class="travel-link">My Favorites</a> - Best destinations and experiences</li>
+        </ul>
+    </div>
+    <!-- Skateboarding Section -->
+    <div class="about-section">
+        <h2>Skateboarding</h2>
+        <p></p>
+        <ul>
+            <li><a href="{{ url_for('street_skating') }}" class="skate-link">Street Skating</a></li>
+            <li><a href="{{ url_for('park_skating') }}" class="skate-link">Park Skating</a></li>
+            <li><a href="{{ url_for('skate_camp') }}" class="skate-link">Skate Camp</a></li>
+        </ul>
+    </div>
+    <!-- Home Projects Section -->
+    <div class="about-section">
+        <h2>Home Ownership</h2>
+        <p>As a homeowner, I enjoy taking on various improvement and maintenance projects. My experience includes:</p>
+        <ul>
+            <li>Various small projects: lighting upgrades, installation: garage door opener, ceiling fan, dryer vent, kitchen backsplash, kitchen and bath sinks</li>
+            <li>Regular maintenance and repairs: patching drywall, appliance repair (fridge, washer)</li>
+            <li>Outdoor maintenance and repairs: deck maintenance, landscaping, drainage solutions, foundation crack repair</li>
+        </ul>
+    </div>
    
     <!-- Software Engineering Section -->
     <div class="about-section">
@@ -17,26 +47,6 @@
             <li>Networking: Built and implemented multi-threaded servers, network protocols, and SDN primitives using TCP/UDP sockets and OpenFlow protocol</li>
         </ul>
         <a href="{{ url_for('static', filename='docs/resume.pdf') }}" class="resume-link" target="_blank">Download Resume</a>
-    </div>
-    <!-- Home Projects Section -->
-    <div class="about-section">
-        <h2>Home Ownership</h2>
-        <p>As a homeowner, I enjoy taking on various improvement and maintenance projects. My experience includes:</p>
-        <ul>
-            <li>Various small projects: lighting upgrades, installation: garage door opener, ceiling fan, dryer vent, kitchen backsplash, kitchen and bath sinks</li>
-            <li>Regular maintenance and repairs: patching drywall, appliance repair (fridge, washer)</li>
-            <li>Outdoor maintenance and repairs: deck maintenance, landscaping, drainage solutions, foundation crack repair</li>
-        </ul>
-    </div>
-    <!-- Skateboarding Section -->
-    <div class="about-section">
-        <h2>Skateboarding</h2>
-        <p></p>
-        <ul>
-            <li><a href="{{ url_for('street_skating') }}" class="skate-link">Street Skating</a></li>
-            <li><a href="{{ url_for('park_skating') }}" class="skate-link">Park Skating</a></li>
-            <li><a href="{{ url_for('skate_camp') }}" class="skate-link">Skate Camp</a></li>
-        </ul>
     </div>
 </div>
 {% endblock %}
