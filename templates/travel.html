@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}About - Noah Staveley{% endblock %}
+{% block content %}
+<div class="about-container">
+    <h1>TRAVEL</h1>
+    <!-- Travel Section -->
+    <div class="about-section">
+        <p>Exploring new places and experiencing different cultures:</p>
+        <ul>
+            <li><a href="{{ url_for('places_been') }}" class="travel-link">GOING SOON</a></li>
+            <li><a href="{{ url_for('places_going') }}" class="travel-link">PLACES I'VE BEEN</a></li>
+            <li><a href="{{ url_for('favorite_places') }}" class="travel-link">FAVORITES</a></li>
+        </ul>
+    </div>
+    <!-- Recent Travels -->
+    <div class="about-section">
+        <h2>RECENT TRAVELS</h2>
+        {% for post in posts[:8] %}
+        <div class="post">
+            <h3>
+                <a href="{{ url_for('maui2024') if post['title'] == 'Maui 2024'
+                       else url_for('guat2024') if post['title'] == 'Guatemala 2024'
+                       else url_for('turk2023') if post['title'] == 'Grand Turk 2024'
+                       else url_for('italy2023') if post['title'] == 'Italy 2023'
+                       else url_for('cdmx2023') if post['title'] == 'Mexico City 2023'
+                       else url_for('ireland2023') if post['title'] == 'Ireland 2023'
+                       else url_for('iremalta2022') if post['title'] == 'Ireland and Malta 2022'
+                       else url_for('tulum2020') if post['title'] == 'Tulum 2020' else '#' }}">
+                    {{ post['title']|upper }}
+                </a>
+            </h3>
+            <p>{{ post['content'] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

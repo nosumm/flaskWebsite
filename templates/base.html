@@ -10,9 +10,14 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
-            <a class="nav-link about-link" href="{{ url_for('about') }}">About</a>
+            <a class="nav-link about-link" href="{{ url_for('travel') }}">Travel</a>
+            <a class="nav-link about-link" href="{{ url_for('skateboarding') }}">Skateboarding</a>
+            <a class="nav-link about-link" href="{{ url_for('swe') }}">Software Engineering</a>
+            <a class="nav-link about-link" href="{{ url_for('homeowner') }}">Home Ownership</a>
         </div>
     </nav>
+
+
 
     <div class="container">
         {% block content %}{% endblock %}

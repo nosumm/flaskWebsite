@@ -10,9 +10,25 @@ def index():
     conn.close()
     return render_template('index.html', posts=posts)
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
+
+@app.route('/Travel')
+def travel():
+    conn = get_db_connection()
+    posts = conn.execute('SELECT * FROM posts ORDER BY created DESC').fetchall()
+    conn.close()
+    return render_template('travel.html', posts=posts)
+
+@app.route('/Skateboarding')
+def skateboarding():
+    return render_template('skateboarding.html')
+
+@app.route('/Software Engineering')
+def swe():
+    return render_template('swe.html')
+
+@app.route('/homeowner')
+def homeowner():
+    return render_template('homeowner.html')
 
 @app.route('/maui2024')
 def maui2024():
@@ -78,6 +94,7 @@ def places_going():
 @app.route('/travel/favorites')
 def favorite_places():
     return render_template('favorite_places.html')
+
 def get_db_connection():
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row

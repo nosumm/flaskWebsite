@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}About - Noah Staveley{% endblock %}
+{% block content %}
+<div class="about-container">
+    <h1>Skating</h1>
+    <!-- Skateboarding Section -->
+    <div class="about-section">
+        <h2>Skateboarding</h2>
+        <p></p>
+        <ul>
+            <li><a href="{{ url_for('street_skating') }}" class="skate-link">Street Skating</a></li>
+            <li><a href="{{ url_for('park_skating') }}" class="skate-link">Park Skating</a></li>
+            <li><a href="{{ url_for('skate_camp') }}" class="skate-link">Skate Camp</a></li>
+        </ul>
+    </div>
+
+{% endblock %}
