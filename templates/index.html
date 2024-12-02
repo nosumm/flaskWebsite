@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
+{% block title %}Noah Staveley{% endblock %}
+
 {% block content %}
-    <h1>{% block title %} Noah Staveley {% endblock %}</h1>
-    {% for post in posts %}
-        <a href="#">
-            <h2>{{ post['title'] }}</h2>
-        </a>
-        <span class="badge badge-primary">{{ post['created'] }}</span>
-        <hr>
-    {% endfor %}
+{% for post in posts %}
+<div class="post">
+    <h2><a href="{{ url_for('project1') if post['title'] == 'Project 1' else url_for('project2') if post['title'] == 'Project 2' else '#' }}">{{ post['title'] }}</a></h2>
+    <p>{{ post['content'] }}</p>
+</div>
+{% endfor %}
 {% endblock %}

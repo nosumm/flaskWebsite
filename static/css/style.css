@@ -1,6 +1,122 @@
+/* Base reset and global styles */
+body {
+    background-color: #c5d8c5; /* A more vibrant sage green */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgba(197, 216, 197, 0.9); /* Semi-transparent version of background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #2c5e2e; /* Deep forest green for brand */
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #3a5a40; /* Muted forest green for nav links */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1b4332; /* Darker green on hover */
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly translucent white */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+/* Base reset and global styles */
+body {
+    background-color: #e6d2b5; /* Tan background */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #5d4037; /* Deep brown for text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgba(230, 210, 181, 0.9); /* Semi-transparent version of background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #3e2723; /* Very dark brown for brand */
+    font-weight: bold;
+}
+
+.about-link {
+    color: #795548; /* Warm brown for about link */
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: #6d4c41; /* Brown for nav links */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3e2723; /* Darker brown on hover */
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly translucent white */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Headings */
 h1 {
-    border: 2px #eee solid;
-    color: brown;
-    text-align: center;
-    padding: 10px;
+    color: #3e2723; /* Very dark brown for headings */
+    border-bottom: 2px solid #6d4c41;
+    padding-bottom: 10px;
+}
+
+/* Blog post styling */
+.post {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.post h2 {
+    margin-bottom: 10px;
+}
+
+.post h2 a {
+    color: #5d4037; /* Deep brown for post titles */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post h2 a:hover {
+    color: #3e2723; /* Darker brown on hover */
+}
+
+/* Remove timestamp styling */
+.badge {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
 }
