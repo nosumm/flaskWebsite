@@ -1,43 +1,6 @@
 /* Base reset and global styles */
 body {
-    background-color: #c5d8c5; /* A more vibrant sage green */
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navbar styling */
-.navbar {
-    background-color: rgba(197, 216, 197, 0.9); /* Semi-transparent version of background */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.navbar-brand {
-    color: #2c5e2e; /* Deep forest green for brand */
-    font-weight: bold;
-}
-
-.nav-link {
-    color: #3a5a40; /* Muted forest green for nav links */
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #1b4332; /* Darker green on hover */
-}
-
-/* Container styling */
-.container {
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly translucent white */
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-/* Base reset and global styles */
-body {
-    background-color: #e6d2b5; /* Tan background */
+    background-color: #c5d8c5; /* Sage green background */
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #5d4037; /* Deep brown for text */
@@ -47,7 +10,7 @@ body {
 
 /* Navbar styling */
 .navbar {
-    background-color: rgba(230, 210, 181, 0.9); /* Semi-transparent version of background */
+    background-color: rgba(197, 216, 197, 0.9); /* Semi-transparent version of sage green */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -59,11 +22,6 @@ body {
 .about-link {
     color: #795548; /* Warm brown for about link */
     margin-left: 10px;
-}
-
-.nav-link {
-    color: #6d4c41; /* Brown for nav links */
-    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
