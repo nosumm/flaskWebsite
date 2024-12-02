@@ -22,6 +22,13 @@ def project1():
 def project2():
     return render_template('project2.html')
 
+@app.route('/project3')
+def project3():
+    return render_template('project3.html')
+
+@app.route('/project4')
+def project4():
+    return render_template('project4.html')
 def get_db_connection():
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row

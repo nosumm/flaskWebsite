@@ -3,9 +3,16 @@
 {% block title %}Noah Staveley{% endblock %}
 
 {% block content %}
-{% for post in posts %}
+{% for post in posts[:4] %} <!-- Restrict the loop to the first 4 projects -->
 <div class="post">
-    <h2><a href="{{ url_for('project1') if post['title'] == 'Project 1' else url_for('project2') if post['title'] == 'Project 2' else '#' }}">{{ post['title'] }}</a></h2>
+    <h2>
+        <a href="{{ url_for('project1') if post['title'] == 'Project 1' 
+               else url_for('project2') if post['title'] == 'Project 2' 
+               else url_for('project3') if post['title'] == 'Project 3' 
+               else url_for('project4') if post['title'] == 'Project 4' else '#' }}">
+            {{ post['title'] }}
+        </a>
+    </h2>
     <p>{{ post['content'] }}</p>
 </div>
 {% endfor %}
